@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Padma Priya">
+    <link rel="icon" href="Untitled.png" type=" image/x-icon">
+
+    <title>Tables in HTML</title>
+</head>
+<body>
+ <h1> Tables in HTML</h1>
+ <h2> Example 1 </h2>
+<!-- going to create table--> 
+<!-- th stands for table header
+     td stands for table data 
+     tr stands for table row
+     tc stands for table column -->
+<table border="1px" width="500px" height="100px" > 
+    <tr>
+  <!-- table header -->
+  <th> Date </th>
+  <th> Day </th>
+  <th> Session </th>
+  <th> Subject </th>
+    </tr>
+    <tr align="center">
+        <td> 12/01/24</td>
+        <td> Wednesday </td>
+        <td >F.N</td> 
+        <td >Tamil</td>
+    </tr>
+    <tr align="center">
+        <td> 13/01/24</td>
+        <td> Thursday </td>
+        <td >A.N</td> 
+        <td >English</td>
+    </tr>
+    <tr align="center">
+        <td> 15/01/24</td>
+        <td> Saturdayy </td>
+        <td >F.N</td> 
+        <td >Computer Science</td>
+    </tr>
+    <tr align="center">
+        <td> 18/01/24</td>
+        <td> Tuesday</td>
+        <td >A.N</td> 
+        <td >Biology</td>
+    </tr>
+    <tr align="center">
+        <td> 20/01/24</td>
+        <td> Thursday </td>
+        <td >F.N</td> 
+        <td >Chemistry</td>
+    </tr>
+ </table>
+
+ <h2> Example 2 </h2>
+
+    
+ <table border="2px" cellpadding="2px" cellspacing="5px" align="center" > 
+    <!--adding caption to the table-->
+    <caption><strong>Symposium</strong></caption> 
+
+    <!--thead: semantic to the table headings table and it is not mandatory -->
+    <thead>
+    <th colspan="2"> AGENDA</th>
+
+       <tr>
+    <th> Timings </th>
+    <th> Activities </th>
+      </tr>
+    </thead>
+ <!--tbody: semantic to the table body ie content table and it is not mandatory -->
+<tbody> 
+<!--rowspan spans multiple horizontal rows and colspan spans multiple vertical columns-->
+    <tr>
+    <td colspan="2" align="center"> Prayer song</td></tr>
+    <tr>
+        
+        <td> 9 am to 9:30 am </td>
+        <td align="center"> Welcome address </td>
+        
+    </tr>
+    
+    <tr>
+        <td> 9:30 am to 9:35 am </td>
+        <td align="center"> Lightning Ceremony</td>
+    </tr>
+    <tr>
+        <td> 9:35 am to 10 am </td>
+        <td align="center">Principle and Hod address</td>
+    </tr>
+    <tr>
+        <td> 10 am to 10:30 am </td>
+        <td align="center"> Chief Guest address </td>
+    </tr>
+    <td align="center" colspan="2">Tea and Snacks Time</td>
+
+    <tr>
+    <th colspan="2"> Technical & Non technical Competition</th></tr>
+    <tr>
+        <td> 11:00 am to 11:30 am </td>
+        <td align="center">Quiz</td>
+    </tr>
+    <tr>
+        <td> 11:00 am to 11:30 am </td>
+        <td align="center">Quiz</td>
+    </tr>
+    <tr>
+        <td> 11:30 am to 12:30 pm </td>
+        <td align="center">Paper Presentation</td>
+    </tr>
+    <td align="center" colspan="2">Lunch Time</td>
+    <tr>
+        <td> 2:00 pm to 2:30 pm </td>
+        <td align="center">Prize Distribution</td>
+    </tr>
+    <tr>
+        <td> 2:30 pm to 2:45 pm </td>
+        <td align="center">Vote of Thanks</td>
+    </tr>
+    <tr>
+    <td align="center" colspan="2">National Anthem</td>
+</tr>
+</tbody> 
+<!--tbody: semantic to the table footer ie statement to the table and it is not mandatory -->
+<tfoot>
+    <tr>
+        <td colspan="2">
+                 We look forward to your Presence at the festival
+        </td>
+    </tr>
+</tfoot>
+
+<!--  <thead> , <tbody>, and <tfoot> elements will not affect the layout of the table by default. -->
+ </table>
+</body>
